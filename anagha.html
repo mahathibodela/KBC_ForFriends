@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagha</title>
+    <style>
+        header,
+        #f,
+        #s,
+        #t,
+        #fo,
+        #fi {
+            font-size: 1.5rem;
+            color: white;
+            border: 2px solid black;
+            border-radius: 9px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            width: 100%;
+            background-color: rgb(67, 64, 64);
+            margin-bottom: 5px;
+        }
+
+        .b {
+            padding: 9px 40px 9px 40px;
+            margin: 5px 5px 5px 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .c {
+            align-self: baseline;
+            text-align: middle;
+            bottom: 10px;
+            padding: 9px 110px 9px 110px;
+            margin: 26px 5px 5px 5px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        #f,
+        #s,
+        #t,
+        #fo,
+        #fi {
+            display: none;
+            text-align: center;
+
+        }
+
+        .crt,
+        .wro,
+        #end {
+            display: none;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+            color: white;
+            border: 2px solid black;
+            border-radius: 9px;
+            background-color: rgb(67, 64, 64);
+            margin-top: 5px;
+            font-size: 1.3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="kri">
+        <h1>DO U WANT TO PARTICIPATE IN KBC??</h1>
+        <div>
+            <button id="hyes" class="b" onclick="hyes()">YES</button>
+            <button id="hno" class="b" onclick="hno()">NO</button>
+        </div>
+    </header>
+    <section id="qs">
+        <div id="f" class="q">
+            <h1>DO U THINK ANAGHA HAS A BRAIN??</h1>
+            <div>
+                <button id="yes" class="b" onclick="yes()">YES</button>
+                <button id="no" class="b" onclick="no()">NO</button>
+            </div>
+            <div>
+                <button id="continue" class="c" onclick="continu()">CONTINUE</button>
+                <button id="exit" class="c" onclick="exit()">EXIT</button>
+            </div>
+        </div>
+        <div id="s" class="q">
+            <h1>DO U THINK ANAGHA IS A HUMAN??</h1>
+            <div>
+                <button id="hyes" class="b" onclick="yes()">YES</button>
+                <button id="hno" class="b" onclick="no()">NO</button>
+            </div>
+            <div>
+                <button id="continue" class="c" onclick="continu()">CONTINUE</button>
+                <button id="exit" class="c" onclick="exit()">EXIT</button>
+            </div>
+        </div>
+        <div id="t" class="q">
+            <h1>WHAT IS THE CONNECTION BETWEEN ANGHA AND HER BLANKER IN HER PURVA JANMA??</h1>
+            <div>
+                <button id="hyes" class="b" onclick="yes()">DOG-ANGHA<br>TAIL-BLANKET</button>
+                <button id="hno" class="b" onclick="no()">LIZARD-ANAGHA<br>TAIL-BLANKET</button>
+            </div>
+            <div>
+                <button id="continue" class="c" onclick="continu()">CONTINUE</button>
+                <button id="exit" class="c" onclick="exit()">EXIT</button>
+            </div>
+        </div>
+        <div id="fo" class="q">
+            <h1>WHAT IS THE RELATION BETWEEN BTS AND ANAGHA??</h1>
+            <div>
+                <button id="hyes" class="b" onclick="yes()">BIG BROTHERS</button>
+                <button id="hno" class="b" onclick="no()">CHOTE BROTHERS</button>
+            </div>
+            <div>
+                <button id="continue" class="c" onclick="continu()">CONTINUE</button>
+                <button id="exit" class="c" onclick="exit()">EXIT</button>
+            </div>
+        </div>
+        <div id="fi" class="q">
+            <h1>WHY ARE LACRIMAL GLANDS(WHICH TRIGGERS TEARS) BE IDLE IN ANAGHA'S BODY??</h1>
+            <div>
+                <button id="hyes" class="b" onclick="yes()">THERE IS NO NEED OF TRIGGERING</button>
+                <button id="hno" class="b" onclick="no()">THERE IS NO SUCH NEED OF GLAND ACTUALLY..IT
+                    HAPPENS ON ITS OWN FOR ANAGHA</button>
+            </div>
+            <div>
+                <button id="continue" class="c" onclick="continu()">CONTINUE</button>
+                <button id="exit" class="c" onclick="exit()">EXIT</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p class="crt">Hey,Bekar do u have brain first how can u think that anagha has brain..UR ans is wrong</p>
+        <p class="crt">Hey,how can u think that anagha is a human wo microorganism hain..janlo lo world ka bahut bada
+            fact</p>
+        <P class="crt">Nice..u r correct keet it up</P>
+        <p class="crt">EITHER OF THEM IS TRUE</p>
+        <p class="crt">Its just PERFECT.U r right</p>
+    </section>
+    <section>
+        <p class="wro">Brilliant!! angha doesnt have any brain..u r crt</p>
+        <p class="wro">That's great..u r absoluetly crt anagha is not a human(open secreat)</p>
+        <p class="wro">Not a bad option..But it's purva ka purva janma main hain</p>
+        <p class="wro">EITHER OF THEM IS TRUE</p>
+        <p class="wro">Sorry...its not true according to biology..bt yeah we can investigate on it there are chances</p>
+    </section>
+    <p id="end">
+        That's the end of our today's questionare..Today's episode "Questionare on one of heartless,shameless,mindless"
+        has ended.Thanks for joining
+    </p>
+    <script>
+        var i = 0;
+        var qs = document.getElementsByClassName('q');
+        var l = qs.length;
+        var s = 0;
+        var k=0;
+        function hyes() {
+            let head = document.getElementById('kri');
+            head.style.display = 'none';
+            fun(0);
+        }
+        function caution() {
+            if (s == 0) {
+                let time = confirm("Hey how much time do u take for thiss easy qs..HINT:-Tdy's show is on the wierdest");
+                console.log(time);
+                s = 1;
+            }
+        }
+        function fun(a) {
+            if (a != 0)
+                qs[a - 1].style.display = 'none';
+            qs[a].style.display = 'flex';
+            i = i + 1;
+            k=setTimeout(caution, 5000);
+            console.log("started timer " + i);
+        }
+        function yes() {
+            if (s == 0) {
+                clearTimeout(k);
+                console.log("in yes cleared");
+                console.log(s);
+            }
+            console.log(s);
+            s = 1;
+            console.log(s);
+            let crt = document.getElementsByClassName('crt');
+            let wro = document.getElementsByClassName('wro');
+            if (i != 0) {
+                wro[i - 1].style.display = 'none';
+            }
+            crt[i - 1].style.display = 'block';
+        }
+        function no() {
+            if (s == 0) {
+                clearTimeout(k);
+                console.log("in no cleared");
+            }
+            s = 1;
+            let wro = document.getElementsByClassName('wro');
+            let crt = document.getElementsByClassName('crt');
+            if (i != 0) {
+                crt[i - 1].style.display = 'none';
+            }
+            wro[i - 1].style.display = 'block';
+        }
+        function continu() {
+            if (s == 0) {
+                clearTimeout(k);
+                console.log("in continue cleared" + i);
+            }
+            s = 0;
+            let wro = document.getElementsByClassName('wro');
+            let crt = document.getElementsByClassName('crt');
+            if (i != 0) {
+                wro[i - 1].style.display = 'none';
+                crt[i - 1].style.display = 'none';
+            }
+            if (i < l) {
+                fun(i);
+            }
+            else {
+                qs[i - 1].style.display = 'none';
+                wro[i - 1].style.display = 'none';
+                crt[i - 1].style.display = 'none';
+
+                let end = document.getElementById('end')
+                end.style.display = 'block';
+            }
+        }
+        function exit() {
+            let exit = document.getElementById('exit');
+            exit.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>
